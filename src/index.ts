@@ -1,5 +1,3 @@
-export function getHelloWorld(): string {
-    return "Hello World";
-}
+import gameLoop from "./game/game-loop";
 
-console.log(getHelloWorld());
+gameLoop();
