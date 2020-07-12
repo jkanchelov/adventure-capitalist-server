@@ -77,7 +77,7 @@ export default abstract class Business implements IBusiness {
         this._timePerCycle = timePerCycle;
     }
 
-    protected finishJob() {
+    protected finishJob(): void {
         this._isWorking = false;
         this._startedJobTime = null;
 
