@@ -4,13 +4,15 @@ export default interface Business {
     name: string;
     shopsQuantity: number;
     manager: Manager;
-    completeJobTime: number;
     money: number;
+
+    nextShopPrice(): number;
 
     start(): void;
     addManager: (manager: Manager) => void;
-    upgrade(): void;
+    upgrade(upgradeMultiplier: number): void;
+    buyShop(): void;
     isWorking(): boolean;
-    setProfitPerCycle(profitPrCycle: number): void;
+    remainingCompleteJobTime(): number;
     setTimePerCycle(timePerCycle: number): void;
 }
