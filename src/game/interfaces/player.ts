@@ -6,5 +6,7 @@ export default interface Player {
     money: number;
 
     addBusiness: (business: Business) => void;
+    buyShop: (business: Business) => void;
     upgradeBusiness: (business: Business) => void;
+    listBusinesses: () => Business[];
 }

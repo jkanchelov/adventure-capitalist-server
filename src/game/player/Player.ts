@@ -10,6 +10,8 @@ export default class Player implements IPlayer {
         console.log("Player initialized");
     }
 
+    buyShop: (business: Business) => void;
+    listBusinesses: () => Business[];
     addBusiness: (business: Business) => void;
     upgradeBusiness: (business: Business) => void;
 }
